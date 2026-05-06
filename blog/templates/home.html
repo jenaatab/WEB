@@ -1,0 +1,9 @@
+{% extends 'base.html' %} 
+{% load debug %}
+
+{% block content %}
+<h2>Вcе посты (список):</h2>
+<pre>{{ object_list|as_dict }}</pre>
+<h2>Первый пост:</h2>
+<pre>{{ object_list.0|as_dict }} </pre>
+{% endblock content %}
